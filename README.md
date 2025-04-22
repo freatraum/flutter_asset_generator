@@ -55,16 +55,16 @@ dart pub global activate -s git https://github.com/fluttercandies/flutter_asset_
 ```
 
 1. Run below commands:
-`fgen`
+`ffgen`
 or
-`fgen -s $flutter_project`
+`ffgen -s $flutter_project`
 
 ### Support options
 
-Use `$ fgen -h` or `$ fgen --help` see usage document.
+Use `$ ffgen -h` or `$ ffgen --help` see usage document.
 
 ```bash
-fgen -h
+ffgen -h
 -w, --[no-]watch    Continue to monitor changes after execution of orders.
                     (defaults to on)
 
@@ -113,7 +113,7 @@ Because the two field names will be exactly the same.
 
 The location of the configuration file is conventional.
 Configuration via commands is **not supported**.
-The specified path is `fgen.yaml` in the flutter project root directory.
+The specified path is `ffgen.yaml` in the flutter project root directory.
 
 ### Config schema for vscode
 
@@ -126,7 +126,7 @@ It can be used to prompt the configuration file.
 ```json
 {
   "yaml.schemas": {
-    "https://raw.githubusercontent.com/fluttercandies/flutter_asset_generator/master/fgen_schema.json": ["fgen.yaml"]
+    "https://raw.githubusercontent.com/fluttercandies/flutter_asset_generator/master/ffgen_schema.json": ["ffgen.yaml"]
   }
 }
 ```

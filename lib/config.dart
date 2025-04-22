@@ -35,7 +35,7 @@ class Config {
     src = absolute(src);
     src = normalize(src);
 
-    final File configFile = File(join(src, 'fgen.yaml'));
+    final File configFile = File(join(src, 'ffgen.yaml'));
 
     String? output = results['output'];
     String? className = results['name'];

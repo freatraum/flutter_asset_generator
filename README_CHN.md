@@ -49,21 +49,21 @@ dart pub global activate -s git https://github.com/fluttercandies/flutter_asset_
 1. 在项目目录下执行：
 
 ```bash
-fgen
+ffgen
 ```
 
 或者
 
 ```bash
-fgen -s $flutter_project
+ffgen -s $flutter_project
 ```
 
 ### 支持的命令行参数
 
-使用 `$ fgen -h` 或 `$ fgen --help` 可以查看帮助文档
+使用 `$ ffgen -h` 或 `$ ffgen --help` 可以查看帮助文档
 
 ```bash
-fgen -h
+ffgen -h
 -w, --[no-]watch    Continue to monitor changes after execution of orders.
                     (defaults to on)
 
@@ -89,7 +89,7 @@ fgen -h
 
 -o 是生成的资源文件地址,需要包含`.dart`
 
-如果你在 flutter 目录下执行, 仅需 fgen 即可
+如果你在 flutter 目录下执行, 仅需 ffgen 即可
 
 可以加 --no-watch 参数来不监听文件变化,仅生成一次资源文件
 
@@ -120,7 +120,7 @@ images/
 
 ## 配置文件
 
-配置文件为约定式，**不支持**通过命令指定，该文件为项目根目录下（与`pubspec.yaml`同级）下的`fgen.yaml`
+配置文件为约定式，**不支持**通过命令指定，该文件为项目根目录下（与`pubspec.yaml`同级）下的`ffgen.yaml`
 
 ### 排除和导入
 

@@ -1,8 +1,8 @@
 {
   "yaml.schemas": {
-    "http://json-schema.org/draft-07/schema#": "fgen_schema.json",
-    "fgen_schema.json": [
-      "fgen.yaml"
+    "http://json-schema.org/draft-07/schema#": "ffgen_schema.json",
+    "ffgen_schema.json": [
+      "ffgen.yaml"
     ]
   },
   "dart.flutterSdkPath": ".fvm/versions/3.29.3"

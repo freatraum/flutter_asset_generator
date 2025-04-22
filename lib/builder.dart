@@ -55,13 +55,13 @@ class ResourceDartBuilder {
     startWatch(className);
   }
 
-  File get logFile => File('.dart_tool${separator}fgen_log.txt');
+  File get logFile => File('.dart_tool${separator}ffgen_log.txt');
 
   String get projectRootPath => config.src;
   String get outputPath => config.output;
 
   /// Write logs to the file
-  /// Defaults to `.dart_tools/fgen_log.txt`
+  /// Defaults to `.dart_tools/ffgen_log.txt`
   void writeText(Object text, {File? file}) {
     file ??= logFile;
     if (!file.existsSync()) {
@@ -226,7 +226,7 @@ class ResourceDartBuilder {
       watchMap[pubspec] = sub;
     }
 
-    final File configFile = File('$projectRootPath${separator}fgen.yaml');
+    final File configFile = File('$projectRootPath${separator}ffgen.yaml');
     if (configFile.existsSync()) {
       // ignore: cancel_subscriptions
       final StreamSubscription<FileSystemEvent>? configFileSub =
