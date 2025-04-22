@@ -1,14 +1,14 @@
-name: flutter_asset_generator
+name: flutter_asset_generator_latest
 description: Generates the resource file by scanning assets defined in the pubspec.yaml, imitation R file short name.
-repository: https://github.com/fluttercandies/flutter_asset_generator
+repository: https://github.com/freatraum/flutter_asset_generator
 version: 1.2.0
 
 environment:
-  sdk: '>=2.12.0 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
   args: ^2.1.1
-  dart_style: ^2.0.2
+  dart_style: ^3.0.1
   glob: ^2.0.1
   io: ^1.0.3
   path: ^1.8.0

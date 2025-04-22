@@ -9,3 +9,6 @@
 build/
 
 .flutter-plugins
+
+# FVM Version Cache
+.fvm/

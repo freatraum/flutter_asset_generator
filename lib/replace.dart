@@ -1,4 +1,4 @@
-import 'package:flutter_asset_generator/config.dart';
+import 'package:flutter_asset_generator_latest/config.dart';
 import 'package:yaml/yaml.dart';
 
 class RegexItem {

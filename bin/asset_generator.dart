@@ -1,7 +1,7 @@
 import 'package:args/args.dart';
-import 'package:flutter_asset_generator/builder.dart';
-import 'package:flutter_asset_generator/config.dart';
-import 'package:flutter_asset_generator/logger.dart';
+import 'package:flutter_asset_generator_latest/builder.dart';
+import 'package:flutter_asset_generator_latest/config.dart';
+import 'package:flutter_asset_generator_latest/logger.dart';
 
 void main(List<String> args) {
   final ArgParser parser = ArgParser();
