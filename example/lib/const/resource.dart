@@ -4,18 +4,43 @@
 class R {
   const R._();
 
-  static const String ASSETS_BLUETOOTHON_FJDFJ_PNG =
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/assets/address.png)
+  static const String assetsAddressPng = 'assets/address.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/assets/address@at.png)
+  static const String assetsAddressAtAtPng = 'assets/address@at.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/assets/bluetoothon-fjdfj.png)
+  static const String assetsBluetoothonFjdfjPng =
       'assets/bluetoothon-fjdfj.png';
 
-  static const String ASSETS_BLUETOOTHON_PNG = 'assets/bluetoothon.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/assets/bluetoothon.png)
+  static const String assetsBluetoothonPng = 'assets/bluetoothon.png';
 
-  static const String ASSETS_CAMERA_PNG = 'assets/camera.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/assets/camera.png)
+  static const String assetsCameraPng = 'assets/camera.png';
 
-  static const String IMAGES_AUDIO_PNG = 'images/audio.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/address%20space.png)
+  static const String imagesAddressSpacePng = 'images/address space.png';
 
-  static const String IMAGES_BLUETOOTHOFF_PNG = 'images/bluetoothoff.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/address.png)
+  static const String imagesAddressPng = 'images/address.png';
 
-  static const String IMAGES_CHILD_PNG = 'images/child.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/addto.png)
+  static const String imagesAddtoPng = 'images/addto.png';
 
-  static const String IMAGES_COURSE_PNG = 'images/course.png';
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/audio.png)
+  static const String imagesAudioPng = 'images/audio.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/bluetooth_link.png)
+  static const String imagesBluetoothLinkPng = 'images/bluetooth_link.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/bluetoothoff.png)
+  static const String imagesBluetoothoffPng = 'images/bluetoothoff.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/child.png)
+  static const String imagesChildPng = 'images/child.png';
+
+  /// ![preview](file:///Users/Jone/flutter/flutter_asset_generator/example/images/course.png)
+  static const String imagesCoursePng = 'images/course.png';
 }
