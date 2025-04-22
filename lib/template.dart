@@ -53,8 +53,8 @@ class $className {\n
     List<String> parts = replaced.split('_').where((e) => e.isNotEmpty).toList();
     if (parts.isEmpty) return '';
 
-    String camelCase = parts.first.toLowerCase() +
-        parts.skip(1).map((s) => s.isNotEmpty ? s[0].toUpperCase() + s.substring(1).toLowerCase() : '').join();
+    String camelCase = parts.first +
+        parts.skip(1).map((s) => s.isNotEmpty ? s[0].toUpperCase() + s.substring(1) : '').join();
 
     return camelCase;
   }
