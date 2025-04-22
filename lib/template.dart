@@ -43,44 +43,19 @@ class $className {\n
   }
 
   String _formatFiledName(String path) {
-    // 先去掉路径前缀，只保留文件名部分
-    String fileName = path.split('/').last;
-    // 去掉文件名中的非法字符，按 . - _ 空格 分割
-    List<String> parts = fileName
-        .replaceAll(RegExp(r'[\s\-_@]+'), ' ')
-        .replaceAll('.', ' ')
-        .split(' ')
-        .where((e) => e.isNotEmpty)
-        .toList();
+    // 先用 replacer 处理
+    String replaced = replacer.replaceName(path);
 
-    // 第一个单词小写，后面每个单词首字母大写
-    String camelCase = parts.asMap().entries.map((entry) {
-      int idx = entry.key;
-      String word = entry.value;
-      if (idx == 0) {
-        return word.toLowerCase();
-      } else {
-        return word[0].toUpperCase() + word.substring(1).toLowerCase();
-      }
-    }).join();
+    // 去掉最前面的下划线
+    replaced = replaced.replaceFirst(RegExp(r'^_+'), '');
 
-    // 如果路径中有子目录，加上目录名（同样驼峰处理）
-    List<String> dirs = path.split('/')..removeLast();
-    if (dirs.isNotEmpty) {
-      String dirCamel = dirs.map((d) {
-        List<String> dParts = d
-            .replaceAll(RegExp(r'[\s\-_@]+'), ' ')
-            .split(' ')
-            .where((e) => e.isNotEmpty)
-            .toList();
-        return dParts.map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase()).join();
-      }).join();
-      // 目录首字母小写
-      if (dirCamel.isNotEmpty) {
-        dirCamel = dirCamel[0].toLowerCase() + dirCamel.substring(1);
-      }
-      return dirCamel + camelCase;
-    }
+    // 按下划线分割，转为小驼峰
+    List<String> parts = replaced.split('_').where((e) => e.isNotEmpty).toList();
+    if (parts.isEmpty) return '';
+
+    String camelCase = parts.first.toLowerCase() +
+        parts.skip(1).map((s) => s.isNotEmpty ? s[0].toUpperCase() + s.substring(1).toLowerCase() : '').join();
+
     return camelCase;
   }
 
